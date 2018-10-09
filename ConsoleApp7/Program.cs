@@ -10,6 +10,11 @@ namespace ConsoleApp7
     {
         static void Main(string[] args)
         {
+            clsBaseClients client = new clsBaseClients(0, "Cesar Tapia", "0012", "TAMC880934", 1, "Scott Yoon");
+            Console.WriteLine(client.Pin + " " + client.Name);
+            Console.WriteLine(client.RegimentType);
+            Console.WriteLine(client.RFC);
+            Console.ReadKey();
         }
     }
 }
