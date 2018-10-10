@@ -18,9 +18,12 @@ namespace ConsoleApp7
                                                         "Nordhoff St.", "15942", "", 
                                                         "North Hills", "California", "92343");
 
-            clsImpression Impression;
-            Impression = new clsImpression();
-
+            intExits Impression;
+            string chain = Console.ReadLine();
+            if (chain == "1")
+                Impression = new clsImpression();
+            else
+                Impression = new clsFiles();
             Impression.PrintClient(client);
         }
     }
