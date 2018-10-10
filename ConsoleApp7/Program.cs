@@ -10,11 +10,18 @@ namespace ConsoleApp7
     {
         static void Main(string[] args)
         {
-            clsBaseClients client = new clsBaseClients(0, "Cesar Tapia", "0012", "TAMC880934", 1, "Scott Yoon");
-            Console.WriteLine(client.Pin + " " + client.Name);
-            Console.WriteLine(client.RegimentType);
-            Console.WriteLine(client.RFC);
-            Console.ReadKey();
+            clsClientsWithContact client = new clsClientsWithContact(0, "Cesar Tapia", 
+                                                        "0012", 
+                                                        "TAMC880934", 
+                                                        1, "Scott Yoon", 
+                                                        "1234567890", "", "example@test.com",
+                                                        "Nordhoff St.", "15942", "", 
+                                                        "North Hills", "California", "92343");
+
+            clsImpression Impression;
+            Impression = new clsImpression();
+
+            Impression.PrintClient(client);
         }
     }
 }

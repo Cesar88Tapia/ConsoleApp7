@@ -44,7 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsAbsClients.cs" />
+    <Compile Include="clsAddresses.cs" />
     <Compile Include="clsBaseClients.cs" />
+    <Compile Include="clsClientsWithContact.cs" />
+    <Compile Include="clsImpression.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
